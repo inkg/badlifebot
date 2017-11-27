@@ -1,10 +1,13 @@
 {
-  "name":"BadLifeBot",
-  "version":"1.0.4",
-  "desc":"Bot BadLife Commands",
-  "main":"app.js",
-
-  "author":"",
-
-
+  "name": "BadLife",
+  "description": "Bot BadLife",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "discord.js": "11.1.0",
+    "request": "2.81.0"
+  }
 }
