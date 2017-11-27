@@ -1,0 +1,10 @@
+{
+  "name":"BadLifeBot",
+  "version":"1.0.4",
+  "desc":"Bot BadLife Commands",
+  "main":"app.js",
+
+  "author":"",
+
+
+}
