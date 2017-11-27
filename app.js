@@ -1,6 +1,6 @@
 // Calling Packages
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const bot = new Discord.Client();
                         //const fs = require('fs');
 
 // JSON File
@@ -11,7 +11,7 @@ const client = new Discord.Client();
 const prefix = '!';
 
 // Listener Event
-client.on('message', message => {
+bot.on('message', message => {
 
     // Variables 
     let msg = message.content.toUpperCase();
@@ -139,12 +139,12 @@ client.on('message', message => {
 
 
 
-client.on('ready', () => {
-    client.user.setPresence({game: { name: "!help | BadLife RP", type: 0}});
+bot.on('ready', () => {
+    bot.user.setPresence({game: { name: "!help | BadLife RP", type: 0}});
 
     // Pour voir si le client est lancé.
-    console.log('client BADLIFE Lancée.');
+    console.log('bot BADLIFE Lancée.');
 
 });
 
-client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
