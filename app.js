@@ -82,7 +82,7 @@ client.on('message', message => {
     if (msg.startsWith(prefix + 'VOTE')) {
         var help_embed = new Discord.RichEmbed()
             .setColor('#1AFE01')
-            .addField("__Bonjour, c'est moi le client !__","**Dis moi tu n'aurais pas une petite minute pour un petit vote ?\nMerci d'avance,** https://gta.top-serveurs.net/bad-life-rp")
+            .addField("__Bonjour, c'est moi le bot !__","**Dis moi tu n'aurais pas une petite minute pour un petit vote ?\nMerci d'avance,** https://gta.top-serveurs.net/bad-life-rp")
     message.channel.sendEmbed(help_embed);
 
     };
