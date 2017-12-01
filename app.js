@@ -128,7 +128,7 @@ client.on('message', message => {
         };
         var help_embed = new Discord.RichEmbed()
             .setColor('#5D56B2')
-            .addField("__***Prochaine update***__","N/A")
+            .addField("__***Prochaine update***__","Liasons via API (GTA-SERVER).\nNombre de joueurs EN LIGNE.")
             .setFooter('Dernière update > 27/11/17')
     message.channel.sendEmbed(help_embed);
     
