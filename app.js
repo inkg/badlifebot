@@ -123,7 +123,7 @@ client.on('message', message => {
     if (msg.startsWith(prefix + 'SITE')) {
         var help_embed = new Discord.RichEmbed()
             .setColor('#6FFE01')
-            .addField("Sites, http://badlife.xyz/\nhttp://badlife.xyz/duss-auto")
+            .addField("Sites","http://badlife.xyz/\nhttp://badlife.xyz/duss-auto")
     message.channel.sendEmbed(help_embed);
 
     };
