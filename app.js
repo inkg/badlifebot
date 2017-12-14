@@ -73,7 +73,7 @@ client.on('message', message => {
     if (msg.startsWith(prefix + 'KEYS')) {
         var help_embed = new Discord.RichEmbed()
             .setColor('#01FEDC')
-            .addField('__Touches disponibles en jeu__',"**F1** > Menu personnel, inventaire, véhicule.\n**F2** > Menu métier.\n**F3** > Changer le volume de la voix.\n**F5** > Menu accessopires.\n**F9** > Menu animations et démarches.\n**K** > Téléphone.\n**U** > Vérouiller le véhicule.\n**N** > Chat Vocal InGame.\n**Y** > Régulateur de vitesse.")
+            .addField('__Touches disponibles en jeu__',"**F1** > Menu personnel, inventaire, véhicule.\n**F3** > Changer le volume de la voix.\n**F5** > Menu accessopires.\n**F6** > Menu métier.\n**F9** > Menu animations et démarches.\n**K** > Téléphone.\n**U** > Vérouiller le véhicule.\n**N** > Chat Vocal InGame.\n**Y** > Régulateur de vitesse.")
         message.channel.sendEmbed(help_embed);
 
     };
