@@ -63,7 +63,7 @@ client.on('message', message => {
     if (msg.startsWith(prefix + 'HELP')) {
         var help_embed = new Discord.RichEmbed()
             .setColor('#D9F200')
-            .addField('__Commandes disponibles__', "**!keys** > Affiche les touches en jeu.\n**!vote** > Pour aider le serveur.\n**!ip** > Affiche l'ip du serveur.\n**!reglement** > Affiche le lien du reglement.")
+            .addField('__Commandes disponibles__', "**!keys** > Affiche les touches en jeu.\n**!vote** > Pour aider le serveur.\n**!ip** > Affiche l'ip du serveur.\n**!reglement** > Affiche le lien du reglement.\n**!site** > Affiche les lien des sites.")
             .setFooter('Développer par @inkgtv')
         message.channel.sendEmbed(help_embed);
 
@@ -123,7 +123,7 @@ client.on('message', message => {
     if (msg.startsWith(prefix + 'SITE')) {
         var help_embed = new Discord.RichEmbed()
             .setColor('#6FFE01')
-            .addField("Site de la ville : http://badlife.xyz/\nSite de voiture : http://badlife.xyz/duss-auto")
+            .addField("Sites, http://badlife.xyz/\nhttp://badlife.xyz/duss-auto")
     message.channel.sendEmbed(help_embed);
 
     };
