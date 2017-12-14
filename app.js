@@ -114,7 +114,7 @@ client.on('message', message => {
     if (msg.startsWith(prefix + 'REGLEMENT')) {
         var help_embed = new Discord.RichEmbed()
             .setColor('#F36100')
-            .addField("Le réglement c'est par ici.","http://badlife.xyz/reglement-du-serveur")
+            .addField("__***Le réglement c'est par ici.***__","http://badlife.xyz/reglement-du-serveur")
     message.channel.sendEmbed(help_embed);
 
     };
@@ -123,7 +123,7 @@ client.on('message', message => {
     if (msg.startsWith(prefix + 'SITE')) {
         var help_embed = new Discord.RichEmbed()
             .setColor('#6FFE01')
-            .addField("Sites","http://badlife.xyz/\nhttp://badlife.xyz/duss-auto")
+            .addField("__***Sites***__","http://badlife.xyz/\nhttp://badlife.xyz/duss-auto")
     message.channel.sendEmbed(help_embed);
 
     };
