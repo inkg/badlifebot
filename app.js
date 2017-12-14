@@ -127,6 +127,15 @@ client.on('message', message => {
     message.channel.sendEmbed(help_embed);
 
     };
+  
+      // Classement Karting
+     if (msg.startsWith(prefix + 'KARTING')) {
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#F36100')
+            .addField("__***Le classement du Karting!***__","https://docs.google.com/spreadsheets/d/1wBSgR-MSQtgTD7B9XAlSfuaz0JbpltlISA3ZZlMuILw/edit?usp=sharing")
+    message.channel.sendEmbed(help_embed);
+
+    };
 
 
     // Next Update
