@@ -119,6 +119,16 @@ client.on('message', message => {
 
     };
 
+    // Site
+    if (msg.startsWith(prefix + 'SITE')) {
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#6FFE01')
+            .addField("Site de la ville : http://badlife.xyz/\nSite de voiture : http://badlife.xyz/duss-auto")
+    message.channel.sendEmbed(help_embed);
+
+    };
+
+
     // Next Update
      if (msg.startsWith(prefix + 'UPDATE')) {
 
