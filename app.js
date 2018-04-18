@@ -34,8 +34,8 @@ client.on('message', message => {
             message.delete();
 
             
-            if (!message.member.roles.find("name", "BadLifeMod")) { 
-                message.channel.send('Vous avez besoin du rôle \`BadLifeMod\` pour utiliser cette commande.'); 
+            if (!message.member.roles.find("name", "NMLsm")) { 
+                message.channel.send('Vous avez besoin du rôle \`NMLsm\` pour utiliser cette commande.'); 
                 return;
             }
 
@@ -91,7 +91,7 @@ client.on('message', message => {
     if (msg.startsWith(prefix + 'IP')) {
         var help_embed = new Discord.RichEmbed()
             .setColor('#6FFE01')
-            .addField("__L'ip du serveur__","> **5.51.115.99**\n__***Sous-Whitelist !***__")
+            .addField("__L'ip du serveur__","> **85.201.12.46:30120**\n__***Sous-Whitelist !***__")
     message.channel.sendEmbed(help_embed);
 
     };
@@ -99,8 +99,8 @@ client.on('message', message => {
     // Mod
     if (msg.startsWith(prefix + 'MOD')) {
 
-        if (!message.member.roles.find("name", "BadLifeMod")) { 
-            message.channel.send('Vous avez besoin du rôle \`BadLifeMod\` pour utiliser cette commande.'); 
+        if (!message.member.roles.find("name", "NMLmod")) { 
+            message.channel.send('Vous avez besoin du rôle \`NMLmod\` pour utiliser cette commande.'); 
             return;
         };
         var help_embed = new Discord.RichEmbed()
@@ -141,14 +141,14 @@ client.on('message', message => {
     // Next Update
      if (msg.startsWith(prefix + 'UPDATE')) {
 
-        if (!message.member.roles.find("name", "BadLifeMod")) { 
-            message.channel.send('Vous avez besoin du rôle \`BadLifeMod\` pour utiliser cette commande.'); 
+        if (!message.member.roles.find("name", "NMLmod")) { 
+            message.channel.send('Vous avez besoin du rôle \`NMLmod\` pour utiliser cette commande.'); 
             return;
         };
         var help_embed = new Discord.RichEmbed()
             .setColor('#5D56B2')
             .addField("__***Prochaine update***__","Timer pour les messages auto.\nNombre de joueurs EN LIGNE.")
-            .setFooter('Dernière update > 27/11/17')
+            .setFooter('Dernière update > 18/04/18')
     message.channel.sendEmbed(help_embed);
     
     };
@@ -159,10 +159,10 @@ client.on('message', message => {
 
 
 client.on('ready', () => {
-    client.user.setPresence({game: { name: "!help | BadLife RP", type: 0}});
+    client.user.setPresence({game: { name: "!help | NML RP", type: 0}});
 
     // Pour voir si le client est lancé.
-    console.log('bot BADLIFE Lancée.');
+    console.log('bot NML Lancée.');
 
 });
 
